@@ -1,12 +1,11 @@
-import { Box, Heading, Text, Button } from "@chakra-ui/react";
-import NextImage from "next/image";
+import { Box, Heading, Button, Center, FormControl, FormLabel, Input, Textarea, Stack } from "@chakra-ui/react";
 
 import { SEO } from "../components/seo";
 
 const Home = () => (
   <>
     <SEO title="Home" />
-
+    <Center>
     <Box
       as="section"
       maxW="1440px"
@@ -17,60 +16,45 @@ const Home = () => (
       flexDir={{ base: "column-reverse", lg: "row" }}
       justifyContent={{ base: "center", lg: "space-between" }}
       alignItems="center"
-      textAlign={{ base: "center", lg: "left" }}
+      textAlign={{ base: "center", lg: "center" }}
     >
-      <Box pr={{ lg: "4" }} maxW={{ base: "90%", lg: "50%" }}>
+      <Box maxW={{ base: "50%", lg: "100%" }}>
         <Heading
           as="h1"
           fontSize={{ base: "1.5rem", sm: "2rem", lg: "3rem" }}
           fontWeight="800"
         >
-          Help your team for tracking projects better.
+          Kirim Pesan!
         </Heading>
-        <Text fontWeight="400" pt="4" pb="10">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore atque
-          perspiciatis qui ex ducimus nesciunt et nam. In amet earum optio cum
-          aperiam autem, possimus vero voluptates! Laboriosam, possimus
-          aspernatur.
-        </Text>
         <Box
           display="flex"
           justifyContent={{ base: "center", lg: "flex-start" }}
           alignItems="center"
           flexDir={{ base: "column", lg: "row" }}
         >
-          <Button
-            colorScheme="facebook"
-            variant="solid"
-            mb="2"
-            mr={{ lg: "5" }}
-            fontWeight="600"
-            size="lg"
-          >
-            Create new account
-          </Button>
-          <Button
-            colorScheme="facebook"
-            variant="outline"
-            mb="2"
-            px="12"
-            fontWeight="600"
-            size="lg"
-          >
-            Login
-          </Button>
+
+          <FormControl>
+            <Stack spacing={2}>
+              <FormLabel htmlFor='text'>Nama</FormLabel>
+              <Input id='text' type='text' />
+              <FormLabel htmlFor='email'>Pesan</FormLabel>
+              <Textarea placeholder='Pesan yang ingin disampaikan' paddingBottom="12px" />
+              <Button
+                colorScheme="facebook"
+                variant="outline"
+                mb="2"
+                px="12"
+                fontWeight="600"
+                size="lg"
+              >
+                Simpan
+              </Button>
+            </Stack>
+          </FormControl>
         </Box>
       </Box>
-      <Box maxW={{ base: "xl", lg: "auto" }}>
-        <NextImage
-          src="/team-bro.png"
-          width="600"
-          height="600"
-          alt="team"
-          priority
-        />
-      </Box>
     </Box>
+    </Center>
   </>
 );
 
