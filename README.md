@@ -4,7 +4,7 @@ Diambil dari berbagai Sumber Tutorial, akan saya bagi dalam beberapa cabang.
 
 1. [Menyimpan Data ke Google Sheets dengan Aplikasi Next JS](https://github.com/amati-tiru-modifikasi/nextjs-playing-sheets/tree/sheet1)
 2. [How to Create a Feedback Form using the Google Sheets API](https://github.com/amati-tiru-modifikasi/nextjs-playing-sheets/tree/sheet2)
-3. [Google Sheets as a Database](https://github.com/amati-tiru-modifikasi/nextjs-playing-sheets/tree/sheet3)
+3. [Google Sheets as a Database](https://github.com/amati-tiru-modifikasi/nextjs-playing-sheets/tree/sheet3) ✔️
 4. [Connecting NextJS Mini Project with Google Spreadsheets as Database](https://github.com/amati-tiru-modifikasi/nextjs-playing-sheets/tree/sheet4)
 
 # Template Licencies
