@@ -1,6 +1,7 @@
-import { Box, Heading, Button, Center, FormControl, FormLabel, Input, Textarea, Stack } from "@chakra-ui/react";
+import { Box, Heading, Center } from "@chakra-ui/react";
 
 import { SEO } from "../components/seo";
+import Form from "../components/UI/form";
 
 const Home = () => (
   <>
@@ -33,7 +34,9 @@ const Home = () => (
           flexDir={{ base: "column", lg: "row" }}
         >
 
-          <FormControl>
+          <Form />
+
+          {/* <FormControl>
             <Stack spacing={2}>
               <FormLabel htmlFor='text'>Nama</FormLabel>
               <Input id='text' type='text' />
@@ -50,7 +53,9 @@ const Home = () => (
                 Simpan
               </Button>
             </Stack>
-          </FormControl>
+          </FormControl> */}
+
+
         </Box>
       </Box>
     </Box>
